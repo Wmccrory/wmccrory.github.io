@@ -1,2 +1,2 @@
-# wmccrory.github.io
-publishing exercise
+# basicPortfolio
+Basic Portfolio homework assignment
