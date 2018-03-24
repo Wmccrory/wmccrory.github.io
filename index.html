@@ -1,53 +1,166 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+	<head>
+		<title>will mccrory</title>
+		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>My Starting Portfolio</title>
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+	<body>
 
-<body>
-	<header>
-		<h1>Will McCrory</h1>
+	<!-- header navbar -->
+		<div class="navbarWeb" id="header">
+			<div class="headerContent">
+				<h6 id="navbarName">Will McCrory</h6>
+				<a class="navLink" href="mailto:wmccrory@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+				<a class="navLink" href="https://www.linkedin.com/in/william-mccrory/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				<a class="navLink" href="https://github.com/wmccrory" target="_blank"><i class="fas fa-code-branch"></i></a>
+			</div>
 
-		<nav>
-			<a class="navbar" href="contact.html">Contact</a>
-				<div class="seperator"></div>
-			<a class="navbar" href="portfolio.html">Portfolio</a>
-				<div class="seperator"></div>
-			<a class="navbar" href="index.html">About</a>
-		</nav>
-	
-	</header>
+			<div class="headerContent">
+				<a class="navLink" href="#intro"><i class="fas fa-home"></i></a>
+				<a class="navLink" href="#bio"><i class="far fa-question-circle"></i></a>
+				<a class="navLink" href="#portfolio"><i class="far fa-folder-open"></i></a>
+			</div>
+		</div>
 
-	<section class="content">
-		<h2>About Me</h2>
-		<br>
-		
-		<img id="profilePic" src="images/profile.jpg" alt="Profile picture" />
-		<p>Born and raised in Austin, a true native son of Texas. Web developer with 1 week experience, one might even call him a "webmaster". However, Will prefers the moniker "technomancer". If you have need for someone who can make a div element float or make a link turn a different color when you hover your mouse over it, you will find no better. A firm believer that the great should never be constrained by the small, freelance work is preferred.</p>
+	<!-- intro splash -->
+		<div class="screen" id="intro">
+			<!-- background image in it's own container for filter purposes -->
+			<div class="backgroundImage"></div>
 
-		<p>With all the technobabble above, you could be left with the impression that coding is the only trick Will has up his sleeve. It is an easy mistake to make if judging solely based on this Ozymandias-esque display of html power. However, there are a plethora of other skills beneath the surface. You may need to dig deep to find them, <a href="https://i.pinimg.com/736x/b6/98/e8/b698e8aede308208579ec7cda91b1836--dankest-memes-dog-memes.jpg">but beware..</a></p>
-	</section>
+			<div id="splashContent">
 
-	<section class="sidebar">
-		<h3>Connect With Me</h3>
-		<br><hr><br>
+				<div id="splashText">
+					<h1>I'm thinking about...</h1>
+					<div class="crt" id="splashInsert">
+						<h2>...<div id="splashLoader"></div></h2>
+					</div>
+				</div>
 
-		<nav>
-			<a href="https://stackexchange.com/users/12549763/will"><img class="mediaIcon" src="images/stack-icon.png" alt="Stack Overflow" /></a>
-			<a href="https://www.linkedin.com/in/william-mccrory-849068154/"><img class="mediaIcon" src="images/linkedin-icon.png" alt="LinkedIn" /></a>
-			<a href="https://github.com/Wmccrory"><img class = "mediaIcon" src="images/github-icon.png" alt="Github" /></a>
-		</nav>
-	</section>
+				<div class="scroll" id="splashScroll">
+					<h3>What else am I thinking about?</h3>
+				</div>
 
-	<footer>
-		<p id="legal">© Copyright 2018 Will McCrory</p>
-	</footer>
+			</div>
+		</div>
 
-</body>
+	<!-- biography html -->
+		<div class="screen" id="bio">
+			<div class="backDiv" id="backDivOne"></div>
 
+			<div class="crt" id="bioContent">
+				<img src="assets/img/profile.jpg" alt="profile picture" />
+				<div>
+					<h2>Who I am</h2>
+					<p>The man, the myth, the legend.</p>
+						<br>
+					<p style="display: inline">Born and raised in Austin, a true native son of Texas. If you need anything, from a hangman game to changing font color to <p style="color: red; display: inline">purple</p><p style="display: inline">, you will find no better. I'm a big fan of using css to make div elements do stuff, and using javascript to make other div elements do other stuff.</p></p>
+					<h2>What I like</h2>
+					<p>With all the technobabble above, you could be left with the impression that coding is the only trick I have up my sleeve. It is an easy mistake if judging solely based on this Ozymandias-esque display of html power. However, that's not true at all! I also like to play bass.</p>
+				</div>
+			</div>
+
+			<div class="crt" id="bioSkills">
+				<img src="assets/img/icon/html.png" alt="html" />
+				<img src="assets/img/icon/css.png" alt="css" />
+				<img src="assets/img/icon/php.png" alt="php" />
+				<img src="assets/img/icon/github.png" alt="github" />
+				<img src="assets/img/icon/javascript.png" alt="javascript" />
+				<img src="assets/img/icon/jquery.png" alt="jQuery" />
+				<img src="assets/img/icon/node.png" alt="node" />
+				<img src="assets/img/icon/react.png" alt="react" />	
+			</div>
+		</div>
+
+	<!-- portfolio sites html -->
+		<div class="screen crt" id="portfolio">
+			<div class="backDiv" id="backDivTwo"></div>
+
+			<div class="crt" id="projectHolder">
+
+				<div class="project" id="sineater">
+					<img src="assets/img/project/sineater.jpg" alt="sineater project" />
+					<div class="projectText">
+						<p>Digital Sin-Eater</p>
+					</div>
+				</div>
+
+				<div class="project" id="starwarsGame">
+					<img src="assets/img/project/starwarsGame.jpg" alt="star wars project" />
+					<div class="projectText">
+						<p>Execute Order: 66</p>
+					</div>
+				</div>
+
+				<div class="project" id="triviaGame">
+					<img src="assets/img/project/triviaGame.jpg" alt="trivia project" />
+					<div class="projectText">
+						<p>Questions of the Void</p>
+					</div>
+				</div>
+
+				<div class="project" id="hangmanGame">
+					<img src="assets/img/project/hangmanGame.jpg" alt="hangman project" />
+					<div class="projectText">
+						<p>Dredd's Game</p>
+					</div>
+				</div>
+
+				<div class="project" id="memesOverboard">
+					<img src="assets/img/project/memesOverboard.jpg" alt="gif meme project" />
+					<div class="projectText">
+						<p>memes overboard!</p>
+					</div>
+				</div>
+
+				<div class="project" id="tourStalkr">
+					<img src="assets/img/project/tourStalkr.jpg" alt="tourStalkr project" />
+					<div class="projectText">
+						<p>tourStalkr</p>
+					</div>
+				</div>
+
+				<div class="project" id="friendFinder">
+					<img src="assets/img/project/friendFinder.jpg" alt="friend finder project" />
+					<div class="projectText">
+						<p>friend FINDer</p>
+					</div>
+				</div>
+
+				<div class="project" id="cacheualCorner">
+					<img src="assets/img/project/cacheualCorner.jpg" alt="sineater project" />
+					<div class="projectText">
+						<p>Cache-ual Corner</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<!-- portfolio modal -->
+
+		<div id="modal">
+			<div id="modalBackground"></div>
+
+			<div class="crt" id="modalContent">
+				<div id="modalClose"><h6><i class="far fa-times-circle"></i></h6></div>
+				<span id="modalContentName"></span>
+				<div id="modalText">
+					<span id="modalContentDescription"></span>
+					<span><img id="modalContentGif" alt="project demonstration" /></span>
+				</div>
+				<span><a id="modalContentLink" target="_blank"><h3>See this project in action</h3></a></span>
+			</div>
+
+		</div>
+
+		<footer>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+			<script src="assets/javascript/javascript.js"></script>
+		</footer>
+	</body>
 </html>
